@@ -11,7 +11,7 @@
 
 <p>本文对OAuth 2.0的设计思路和运行流程，做一个简明通俗的解释，主要参考材料为<a href="http://www.rfcreader.com/#rfc6749">RFC 6749</a>。</p>
 
-<p><img src="/blogimg/asset/2014/bg2014051201.png" alt="OAuth Logo" title="" /></p>
+
 
 ## 一、应用场景
 
@@ -19,14 +19,13 @@
 
 <p>有一个"云冲印"的网站，可以将用户储存在Google的照片，冲印出来。用户为了使用该服务，必须让"云冲印"读取自己储存在Google上的照片。</p>
 
-<p><img src="/blogimg/asset/2014/bg2014051202.png" alt="云冲印" title="" /></p>
 
 <p>问题是只有得到用户的授权，Google才会同意"云冲印"读取这些照片。那么，"云冲印"怎样获得用户的授权呢？</p>
 
 <p>传统方法是，用户将自己的Google用户名和密码，告诉"云冲印"，后者就可以读取用户的照片了。这样的做法有以下几个严重的缺点。</p>
 
 <blockquote>
-  <p>（1）"云冲印"为了后续的服务，会保存用户的密码，这样很不安全。</p>
+<p>（1）"云冲印"为了后续的服务，会保存用户的密码，这样很不安全。</p>
 
 <p>（2）Google不得不部署密码登录，而我们知道，单纯的密码登录并不安全。</p>
 
@@ -69,7 +68,7 @@
 
 <p>OAuth 2.0的运行流程如下图，摘自RFC 6749。</p>
 
-<p><img src="/blogimg/asset/2014/bg2014051203.png" alt="OAuth运行流程" title="" /></p>
+<p><img src="http://www.ruanyifeng.com/blogimg/asset/2014/bg2014051203.png" alt="OAuth运行流程" title="" /></p>
 
 <blockquote>
   <p>（A）用户打开客户端以后，客户端要求用户给予授权。</p>
