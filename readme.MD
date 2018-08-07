@@ -282,7 +282,7 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 <p>在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式。</p>
 
-<p><img src="/blogimg/asset/2014/bg2014051206.png" alt="密码模式" title="" /></p>
+![](https://github.com/YuxingXie/auth2/raw/master/img/4.png)
 
 <p>它的步骤如下：</p>
 
@@ -343,7 +343,7 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 <p>客户端模式（Client Credentials Grant）指客户端以自己的名义，而不是以用户的名义，向"服务提供商"进行认证。严格地说，客户端模式并不属于OAuth框架所要解决的问题。在这种模式中，用户直接向客户端注册，客户端以自己的名义要求"服务提供商"提供服务，其实不存在授权问题。</p>
 
-<p><img src="/blogimg/asset/2014/bg2014051207.png" alt="客户端模式" title="" /></p>
+![](https://github.com/YuxingXie/auth2/raw/master/img/5.png)
 
 <p>它的步骤如下：</p>
 
