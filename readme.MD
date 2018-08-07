@@ -103,7 +103,7 @@
 
 <p>授权码模式（authorization code）是功能最完整、流程最严密的授权模式。它的特点就是通过客户端的后台服务器，与"服务提供商"的认证服务器进行互动。</p>
 
-<p><img src="/blogimg/asset/2014/bg2014051204.png" alt="授权码模式" title="" /></p>
+![](https://github.com/YuxingXie/auth2/raw/master/img/2.png)
 
 <p>它的步骤如下：</p>
 
