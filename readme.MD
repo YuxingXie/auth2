@@ -71,6 +71,7 @@
 ![](https://github.com/YuxingXie/auth2/raw/master/img/1.png)
 
 <blockquote>
+
 * （A）用户打开客户端以后，客户端要求用户给予授权(注：这里想像一个场景，用户在客户端中点击"访问云相册"按钮，于是客户端要求用户授权)。
 
 * （B）用户同意给予客户端授权。
