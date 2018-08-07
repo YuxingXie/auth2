@@ -43,17 +43,17 @@
 <p>在详细讲解OAuth 2.0之前，需要了解几个专用名词。它们对读懂后面的讲解，尤其是几张图，至关重要。</p>
 
 <blockquote>
-  <p>（1） <strong>Third-party application</strong>：第三方应用程序，本文中又称"客户端"（client），即上一节例子中的"云冲印"。</p>
+* （1） <strong>Third-party application</strong>：第三方应用程序，本文中又称"客户端"（client），即上一节例子中的"云冲印"。
 
-<p>（2）<strong>HTTP service</strong>：HTTP服务提供商，本文中简称"服务提供商"，即上一节例子中的Google。</p>
+* （2）<strong>HTTP service</strong>：HTTP服务提供商，本文中简称"服务提供商"，即上一节例子中的Google。
 
-<p>（3）<strong>Resource Owner</strong>：资源所有者，本文中又称"用户"（user）。</p>
+* （3）<strong>Resource Owner</strong>：资源所有者，本文中又称"用户"（user）。
 
-<p>（4）<strong>User Agent</strong>：用户代理，本文中就是指浏览器。</p>
+* （4）<strong>User Agent</strong>：用户代理，本文中就是指浏览器。
 
-<p>（5）<strong>Authorization server</strong>：认证服务器，即服务提供商专门用来处理认证的服务器。</p>
+* （5）<strong>Authorization server</strong>：认证服务器，即服务提供商专门用来处理认证的服务器。
 
-<p>（6）<strong>Resource server</strong>：资源服务器，即服务提供商存放用户生成的资源的服务器。它与认证服务器，可以是同一台服务器，也可以是不同的服务器。</p>
+* （6）<strong>Resource server</strong>：资源服务器，即服务提供商存放用户生成的资源的服务器。它与认证服务器，可以是同一台服务器，也可以是不同的服务器。
 </blockquote>
 
 <p>知道了上面这些名词，就不难理解，OAuth的作用就是让"客户端"安全可控地获取"用户"的授权，与"服务商提供商"进行互动。</p>
