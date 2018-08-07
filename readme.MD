@@ -134,12 +134,12 @@
 
 <p>下面是一个例子。</p>
 
-<blockquote><pre><code class="language-http">
+```text
 GET /authorize?response_type=code&client_id=s6BhdRkqt3&state=xyz
         &redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb HTTP/1.1
 Host: server.example.com
 
-</code></pre></blockquote>
+```
 
 <p>C步骤中，服务器回应客户端的URI，包含以下参数：</p>
 
@@ -150,12 +150,12 @@ Host: server.example.com
 
 <p>下面是一个例子。</p>
 
-<blockquote><pre><code class="language-http">
+```text
 HTTP/1.1 302 Found
 Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA
           &state=xyz
 
-</code></pre></blockquote>
+```
 
 <p>D步骤中，客户端向认证服务器申请令牌的HTTP请求，包含以下参数：</p>
 
@@ -168,7 +168,7 @@ Location: https://client.example.com/cb?code=SplxlOBeZQQYbYS6WxSbIA
 
 <p>下面是一个例子。</p>
 
-<blockquote><pre><code class="language-http">
+```text
 POST /token HTTP/1.1
 Host: server.example.com
 Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW
@@ -177,7 +177,7 @@ Content-Type: application/x-www-form-urlencoded
 grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 &redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb
 
-</code></pre></blockquote>
+```
 
 <p>E步骤中，认证服务器发送的HTTP回复，包含以下参数：</p>
 
@@ -191,7 +191,7 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 <p>下面是一个例子。</p>
 
-<blockquote><pre><code class="language-http">
+```text
      HTTP/1.1 200 OK
      Content-Type: application/json;charset=UTF-8
      Cache-Control: no-store
@@ -205,7 +205,7 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
    "example_parameter":"example_value"
  }
 
-</code></pre></blockquote>
+```
 
 <p>从上面代码可以看到，相关参数使用JSON格式发送（Content-Type: application/json）。此外，HTTP头信息中明确指定不得缓存。</p>
 
@@ -247,12 +247,12 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 <p>下面是一个例子。</p>
 
-<blockquote><pre><code class="language-http">
+```text
     GET /authorize?response_type=token&client_id=s6BhdRkqt3&state=xyz
         &redirect_uri=https%3A%2F%2Fclient%2Eexample%2Ecom%2Fcb HTTP/1.1
     Host: server.example.com
 
-</code></pre></blockquote>
+```
 
 <p>C步骤中，认证服务器回应客户端的URI，包含以下参数：</p>
 
@@ -266,12 +266,12 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 <p>下面是一个例子。</p>
 
-<blockquote><pre><code class="language-http">
+```text
      HTTP/1.1 302 Found
      Location: http://example.com/cb#access_token=2YotnFZFEjr1zCsicMWpAA
                &state=xyz&token_type=example&expires_in=3600
 
-</code></pre></blockquote>
+```
 
 <p>在上面的例子中，认证服务器用HTTP头信息的Location栏，指定浏览器重定向的网址。注意，在这个网址的Hash部分包含了令牌。</p>
 
@@ -306,7 +306,7 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 <p>下面是一个例子。</p>
 
-<blockquote><pre><code class="language-http">
+```text
      POST /token HTTP/1.1
      Host: server.example.com
      Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW
@@ -314,11 +314,13 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
      grant_type=password&username=johndoe&password=A3ddj3w
 
-</code></pre></blockquote>
+```
 
 <p>C步骤中，认证服务器向客户端发送访问令牌，下面是一个例子。</p>
 
-<blockquote><pre><code class="language-http">
+```text
+
+
      HTTP/1.1 200 OK
      Content-Type: application/json;charset=UTF-8
      Cache-Control: no-store
@@ -332,7 +334,7 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
        "example_parameter":"example_value"
      }
 
-</code></pre></blockquote>
+```
 
 <p>上面代码中，各个参数的含义参见《授权码模式》一节。</p>
 
@@ -359,21 +361,21 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 <li>scope：表示权限范围，可选项。</li>
 </ul>
 
-<blockquote><pre><code class="language-http">
+```text
      POST /token HTTP/1.1
      Host: server.example.com
      Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW
      Content-Type: application/x-www-form-urlencoded
 
      grant_type=client_credentials
+```
 
-</code></pre></blockquote>
 
 <p>认证服务器必须以某种方式，验证客户端身份。</p>
 
 <p>B步骤中，认证服务器向客户端发送访问令牌，下面是一个例子。</p>
 
-<blockquote><pre><code class="language-http">
+```text
      HTTP/1.1 200 OK
      Content-Type: application/json;charset=UTF-8
      Cache-Control: no-store
@@ -385,8 +387,8 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
        "expires_in":3600,
        "example_parameter":"example_value"
      }
+```
 
-</code></pre></blockquote>
 
 <p>上面代码中，各个参数的含义参见《授权码模式》一节。</p>
 
@@ -404,14 +406,13 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 <p>下面是一个例子。</p>
 
-<blockquote><pre><code class="language-http">
+```text
      POST /token HTTP/1.1
      Host: server.example.com
      Authorization: Basic czZCaGRSa3F0MzpnWDFmQmF0M2JW
      Content-Type: application/x-www-form-urlencoded
-
      grant_type=refresh_token&refresh_token=tGzv3JOkF0XG5Qx2TlKWIA
 
-</code></pre></blockquote>
+```
 
 <p>（完）</p>
