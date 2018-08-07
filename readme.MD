@@ -68,7 +68,7 @@
 
 <p>OAuth 2.0的运行流程如下图，摘自RFC 6749。</p>
 
-![](http://www.ruanyifeng.com/blogimg/asset/2014/bg2014051203.png)
+![](https://github.com/YuxingXie/auth2/raw/master/img/1.png)
 
 <blockquote>
   <p>（A）用户打开客户端以后，客户端要求用户给予授权。</p>
