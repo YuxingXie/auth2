@@ -216,6 +216,10 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 <p>从上面代码可以看到，相关参数使用JSON格式发送（Content-Type: application/json）。此外，HTTP头信息中明确指定不得缓存。</p>
 
+注：下图是我根据理解所画的时序图：
+
+![](https://github.com/YuxingXie/auth2/raw/master/img/6.png)
+
 ## 七、简化模式
 
 <p>简化模式（implicit grant type）不通过第三方应用程序的服务器，直接在浏览器中向认证服务器申请令牌，跳过了"授权码"这个步骤，因此得名。所有步骤在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证。</p>
