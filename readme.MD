@@ -1,9 +1,9 @@
-# 理解OAuth 2.0
+# 第一篇 理解OAuth 2.0
 
 #### 作者:阮一峰
 ####  [原文地址](http://www.ruanyifeng.com/blog/2014/05/oauth_2_0.html)
 
-    _本人在作者研究的基础上，做了一些勘误和补充说明,这些地方用斜体字表示_
+    本人在作者研究的基础上，做了一些勘误和补充说明,这些地方用斜体字表示
                                
 <div class="asset-content entry-content" id="main-content">
 
@@ -216,7 +216,7 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 
 <p>从上面代码可以看到，相关参数使用JSON格式发送（Content-Type: application/json）。此外，HTTP头信息中明确指定不得缓存。</p>
 
-注：下图是我根据理解所画的时序图：
+_注：下图是我根据理解所画的时序图：_
 
 ![](https://github.com/YuxingXie/auth2/raw/master/img/6.png)
 
@@ -427,3 +427,10 @@ grant_type=authorization_code&code=SplxlOBeZQQYbYS6WxSbIA
 ```
 
 <p>（完）</p>
+
+# 第二篇 实战
+
+服务端采用apache Oltu实现授权服务器。授权服务器项目gitHub地址为：
+
+前端采用angular框架，从授权服务器登录并获取API,所以可以认为angular程序就是一个第三方应用程序。
+
