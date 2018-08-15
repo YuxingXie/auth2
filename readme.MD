@@ -432,9 +432,8 @@ _另：后面集中模式没有仔细去研究了，照抄原文。_
 
 # 第二篇 实战
 
-认证服务器和第三方应用程序服务器采用j2ee，用spring-security-oauth2实现授权服务器。授权服务器项目gitHub地址为：
-
+认证服务器和第三方应用程序服务器采用j2ee，用spring-security-oauth2实现授权服务器。项目gitHub地址为：
 <a href='https://github.com/YuxingXie/oauth2Server' target='_blank'>https://github.com/YuxingXie/oauth2Server</a>
 
-具体实现见该项目.
+详情见该项目。
 
