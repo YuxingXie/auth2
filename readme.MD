@@ -436,5 +436,5 @@ _另：后面集中模式没有仔细去研究了，照抄原文。_
 
 <a href='https://github.com/YuxingXie/oauth2Server' target='_blank'>https://github.com/YuxingXie/oauth2Server</a>
 
-具体实现见该项目readme.MD.
+具体实现见该项目.
 
