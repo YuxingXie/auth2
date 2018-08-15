@@ -220,6 +220,8 @@ _注：下图是我根据理解所画的时序图：_
 
 ![](https://github.com/YuxingXie/auth2/raw/master/img/6.png)
 
+_另：后面集中模式没有仔细去研究了，照抄原文。_
+
 ## 七、简化模式
 
 <p>简化模式（implicit grant type）不通过第三方应用程序的服务器，直接在浏览器中向认证服务器申请令牌，跳过了"授权码"这个步骤，因此得名。所有步骤在浏览器中完成，令牌对访问者是可见的，且客户端不需要认证。</p>
@@ -430,7 +432,9 @@ _注：下图是我根据理解所画的时序图：_
 
 # 第二篇 实战
 
-服务端采用apache Oltu实现授权服务器。授权服务器项目gitHub地址为：
+认证服务器和第三方应用程序服务器采用j2ee，用spring-security-oauth2实现授权服务器。授权服务器项目gitHub地址为：
 
-前端采用angular框架，从授权服务器登录并获取API,所以可以认为angular程序就是一个第三方应用程序。
+<a href='https://github.com/YuxingXie/oauth2Server' target='_blank'>https://github.com/YuxingXie/oauth2Server</a>
+
+具体实现见该项目readme.MD.
 
